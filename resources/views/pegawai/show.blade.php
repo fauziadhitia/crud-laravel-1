@@ -1,6 +1,7 @@
 @extends('adminlte::page')
 @section('title', 'Master Tabel Pegawai')
 @section('content_header')
+
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="/home">Home</a></li>
@@ -68,8 +69,7 @@
                     </tr>
                     <tr>
                         <td><strong>Foto</strong></td>
-                        <td>: <img src="{{ URL::to('/foto/'.
- $pegawai->file_foto) }}"></td>
+                        <td>: <img src="{{ URL::to('/foto/'.$pegawai->file_foto) }}"></td>
                     </tr>
                 </table>
             </div>
